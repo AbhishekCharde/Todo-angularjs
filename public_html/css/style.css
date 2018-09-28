@@ -1,0 +1,138 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Sep 24, 2018, 2:59:03 PM
+    Author     : abhishek.charde
+*/
+
+body{
+    background-color: #FFF;
+    width: 100vw;
+    height: 100vh;
+    background-color: #d5d5d5;
+    padding-top: 50px;
+    font-family: 'Roboto', sans-serif;
+}
+h1,h3{
+    font-size: 30px;
+    padding-top: 0;
+    margin-top: 0;
+    font-stretch: expanded;
+    color: gray;
+    text-align: center;
+    
+}
+h3{
+    font-size: 25px;
+    padding-bottom: 10%;
+    text-align: left;
+}
+.todo{
+    
+    /*width: max-content;*/
+    padding: 60px;
+    align-content: center;
+    margin:auto;
+    padding-right: 70px;
+    padding-left: 70px;
+    /*padding-top: 20px;*/
+    /*top: 50px;*/
+    margin-top: 50px;
+    border-radius: 10px;
+    background-color: white;
+    box-sizing: border-box;
+    /*border: 1px solid orangered;*/
+    box-shadow:  0 0 15px 2px gray;
+    /*transform: scale(1.5);*/
+}
+.todo form input[type="text"],
+.todo form button[type="submit"],
+p button{
+  /*height: 34px;*/
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+  -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+       -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+          transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+          z-index: 1;
+}
+.todo form button[type="submit"],
+p button{
+    background-color: lightgrey;
+    border: transparent;
+    box-shadow: 0px 0px 1px 1px lightgrey;
+    font-weight: 600;
+    padding: 12px;
+    box-sizing: border-box;
+    width: 80%;
+    /*margin-left: 10%;*/
+    /*margin-right: 10%;*/
+}
+.todo form input[type="text"]{
+   border: 1px solid lightgray;
+   box-shadow: 0px 0px 1px 1px lightgrey;
+    font-weight: 600;
+    width: 100%;
+}
+.todo-element {
+    font-size: 16px;
+    vertical-align: middle;
+    
+}
+
+.todo-element input[type="checkbox"]{
+   vertical-align: auto;
+height: 16px;
+width: 16px;
+
+vertical-align: middle;
+}
+.todo-element span{
+    font-size: 18px;
+    vertical-align: middle;
+    color: #574f4f;
+    font-weight: 700;
+}
+.errormsg1{
+    font-size: 14px !important;
+    color: red !important;
+/*    margin: 10px;*/
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+}
+.remove{
+    padding: 20px;
+    padding-left: 0;
+}
+.vr{
+    border-left: 1px solid #eee;
+    
+    min-height: 250px;
+    height: auto;
+}
+.addForm{
+    padding-top: 15px;
+    min-height: 250px;
+    vertical-align: middle;
+    height: 100%;
+}
+.todo-items{
+    padding-top: 15px;
+    text-align: left;
+    /*align-items: center;*/
+}    
+.remove button {
+    padding: 5px;
+}

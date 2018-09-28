@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+    <head>
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body  ng-controller="shoppingController">
+        <div class="col-sm-6 col-sm-offset-3">    
+            <div class="todo">
+                <h1>My Todo List</h1>
+             
+                <div class="row">
+                    <!--<hr>-->
+                    <div class="col-xs-5 addForm">
+                        <form>
+                            <h3>Add Items</h3>
+                            <input type="text" ng-model="listItem" ng-pattern="/^[a-zA-Z\s]*$/" />
+                            <br/>
+                            <br/>
+                            <button type="submit" ng-click="AddItem()" value="Add Item">Submit</button>
+                        </form>
+                        <br/>
+                        <span class="errormsg1" ng-hide="listItem" ng-bind="errorMsg" ></span>
+                    </div>
+                    <div class="col-xs-1"> </div>
+                    <div class="vr col-xs-1"> </div>
+                    <div class="col-xs-5 todo-items ">
+                        <h3>Action</h3>
+                        <div class="todo-element" ng-repeat="x in items">
+                            <span> <input type="checkbox" ng-model="x.done" id="base"> </span>
+                            <span><label for="base" ng-bind="x.todoText"> {{item}}</label> </span>
+                            <span ng-model="errormsg11" ng-hide="x.done"></span>
+                        </div>
+                        <div class="remove">
+                            <span ng-show="check()"></span>
+                            <span ng-show="checkhide()"></span>
+                            <span ng-show="checked()"></span>
+                            <span ng-show="reset()"></span>
+                            <span ng-bind="errorMsg2" class="errormsg1"></span>
+                            <span ng-bind="errorMsg1" class="errormsg1"></span>
+                            <p><button ng-click="remove() ">Remove</button></p>
+                           
+                           
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="js/angular.js" type="text/javascript"></script>
+        <script src="js/script.js" type="text/javascript"></script>
+    </body>
+</html>
